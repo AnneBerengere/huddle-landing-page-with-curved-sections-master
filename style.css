@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(322, 100%, 66%);
+    color: hsl(321, 100%, 78%);
+    color: hsl(0, 100%, 63%);
+    color: hsl(207, 100%, 98%);
+    color: hsl(192, 100%, 9%);
+}
+
+
+
+
+/*Ordinateur*/
+@media only screen and (min-width: 1001px) {
+
+    .container_mobile_border {
+        display: none;
+    }
+
+}
+
+/*Mobile*/
+@media only screen and (max-width: 1000px) {
+
+    .container_desktop_border {
+        display: none;
+    }
+
+}

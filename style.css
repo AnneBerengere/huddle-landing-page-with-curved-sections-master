@@ -25,9 +25,11 @@ body {
 .head>img {
     height: 100%;
     width: auto;
+    margin-left: 81px;
 }
 
 .button_try {
+    margin-right: 65px;
     border: 1px solid hsl(322, 100%, 66%);
     border-radius: 2em;
     color: hsl(322, 100%, 66%);
@@ -35,9 +37,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0px 30px;
     font-weight: 400;
     box-shadow: 0 0 10px -3px hsl(321, 100%, 78%);
+    width: 132px;
+}
+
+.button_try:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .presentation {
@@ -65,21 +72,28 @@ body {
     align-items: center;
     justify-content: center;
     width: 30em;
-    margin-bottom: 47px;
+    margin-bottom: 7px;
 }
 
 .button_start {
+    margin-top: 40px;
     background-color: hsl(322, 100%, 66%);
     text-align: center;
     color: white;
     border-radius: 2em;
     height: 80px;
     box-shadow: 0.1em 0.2em 0.7em -0.1em hsl(270, 1%, 59%);
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 400px;
+}
+
+.button_start:hover {
+    cursor: pointer;
+    background-color: hsl(321, 100%, 78%);
 }
 
 .preview {
@@ -93,8 +107,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 118px;
+    width: 875px;
 }
 
 .box_number {
@@ -116,10 +131,12 @@ body {
 }
 
 .type_number {
+    width: 100%;
     font-size: 24px;
     color: grey;
     font-weight: 400;
     margin-top: 11px;
+    text-align: center;
 }
 
 .container_argument {
@@ -152,9 +169,27 @@ body {
     height: 685px;
 }
 
+.box_content_argument {
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_content_blue_argument {
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .illustration_argument {
-    height: 400px;
+    height: 420px;
     width: auto;
+}
+
+.content_argument {
+    width: 490px;
 }
 
 .title_argument {
@@ -164,17 +199,18 @@ body {
 }
 
 .text_argument {
-    width: 400px;
 
 }
 
 .join {
-    height: 515px;
+    height: 540px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+
 
 .footer {
     width: 100%;
@@ -189,20 +225,27 @@ body {
     height: auto;
 }
 
-.content_footer {
+.background_footer {
     background-color: hsl(192, 100%, 9%);
-    color: hsl(207, 100%, 98%);
-    margin: 0;
     width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_footer {
+    color: hsl(207, 100%, 98%);
+    width: 1200px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     height: 540px;
 }
 
 .box_footer {
     margin-top: 103px;
-    width: 300px;
+    width: 520px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -227,6 +270,7 @@ body {
     font-size: 14px;
     line-height: 1.7em;
     color: hsl(207, 100%, 98%);
+    width: 300px;
 }
 
 .contact {
@@ -243,7 +287,7 @@ body {
 }
 
 .content_contact {
-    margin:0;
+    margin:0 0 0 21px;
 }
 
 .box_logo {
@@ -265,6 +309,11 @@ body {
     height: 32px;
 }
 
+.logo_facebook:hover {
+    cursor: pointer;
+    background-color: #00C1F3;
+}
+
 .logo_facebook>img {
     height: 25px;
     width: auto;
@@ -278,6 +327,11 @@ body {
     filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(234deg) brightness(103%) contrast(100%);
 }
 
+.logo_instagram:hover {
+    cursor: pointer;
+    filter: invert(60%) sepia(97%) saturate(2923%) hue-rotate(154deg) brightness(103%) contrast(100%);
+}
+
 .logo_twitter {
     background-color: #ffffff;
     border-radius: 3px;
@@ -286,6 +340,11 @@ body {
     justify-content: center;
     width: 32px;
     height: 32px;
+}
+
+.logo_twitter:hover {
+    cursor: pointer;
+    background-color: #00C1F3;
 }
 
 .logo_twitter>img {
@@ -298,7 +357,10 @@ body {
     margin-top: 16px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 48px;
+    width: 100%;
 }
 
 .box_subscribe>input {
@@ -307,6 +369,7 @@ body {
     border-radius: 6px;
     height: 100%;
     padding: 0 0 0 10px;
+    width: 310px;
 }
 
 .button_subscribe {
@@ -319,6 +382,12 @@ body {
     height: 100%;
     font-weight: 600;
     font-size: 15px;
+    width: 160px;
+}
+
+.button_subscribe:hover {
+    cursor: pointer;
+    background-color: hsl(321, 100%, 78%);
 }
 
 .attribution {
@@ -343,18 +412,17 @@ body {
         display: none;
     }
 
-    .box_blue {
+    .box_content_blue_argument {
         display: flex;
         flex-direction: row-reverse;
     }
 
-    .box_argument {
+    .box_content_argument {
         display: flex;
         flex-direction: row;
     }
 
     .content_footer {
-        width: 100%;
         display: flex;
         flex-direction: row-reverse;
     }
@@ -373,12 +441,12 @@ body {
         display: none;
     }
 
-    .box_argument {
+    .box_content_blue_argument {
         display: flex;
         flex-direction: column;
     }
 
-    .box_blue {
+    .box_content_argument {
         display: flex;
         flex-direction: column;
     }
